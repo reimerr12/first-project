@@ -1,7 +1,10 @@
 alert("i am connected");
 
-var settingsmenu = document.querySelector("settings-menu");
+var setting= document.querySelector(".settings-menu");
 
 function settingsMenuToggle(){
-    settingsmenu.classList.toggle("settings-menu-height");
+    setting.classList.toggle("settings-menu-height");
 }
+
+
+
