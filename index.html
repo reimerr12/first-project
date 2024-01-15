@@ -6,9 +6,11 @@
     <title>FB clone project</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/df9783ea42.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    
 </head>
 <body>
-<!-- navigation -->
+       <!--------------------- navigation ----------------------->
     <nav>
         <div class="nav-left">
             <img src="images/images/logo.png" class="logo">
@@ -25,8 +27,49 @@
                 <input type="text" placeholder="search">
             </div>
 
-            <div class="nav-user-icon  online">
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
                 <img src="images/images/profile-pic.png" alt="profile-pic">
+            </div>
+        </div>
+       <!-------------settings menu--------------->
+
+
+        <div class="settings-menu">
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/images/profile-pic.png" alt="profile pic">
+                    <div>
+                        <p>John Nicholson</p>
+                        <a href="#">See profile</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="user-profile">
+                    <img src="images/images/feedback.png" alt="profile pic">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">Help us to  improve</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="setting-links">
+                    <img src="images/images/setting.png" alt="settiing" class="settings-icon">
+                    <a href="#">Settings & Privacy <img src="images/images/arrow.png" alt="" width="10px"></box-icon></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/images/help.png" alt="settiing" class="settings-icon">
+                    <a href="#">Help & Support <img src="images/images/arrow.png" alt="" width="10px"></box-icon></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/images/display.png" alt="settiing" class="settings-icon">
+                    <a href="#">Display & Accessibility<img src="images/images/arrow.png" alt="" width="10px"></box-icon></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/images/logout.png" alt="settiing" class="settings-icon">
+                    <a href="#">Logout<img src="images/images/arrow.png" alt="" width="10px"></box-icon></a>
+                </div>
             </div>
         </div>
     </nav>
@@ -34,7 +77,7 @@
     <div class="container">
 
         
-        <!-- LEFT-SIDEBAR -->
+        <!---------------------------------- LEFT-SIDEBAR ----------------------->
 
 
         <div class="left-sidebar">
@@ -57,7 +100,7 @@
             </div>
         </div>
 
-       <!--  MAIN-CONTENT -->
+       <!----------------------  MAIN-CONTENT ------------------------->
 
 
         <div class="main-content">
@@ -115,15 +158,17 @@
 
             
             <div class="post-container">
-                <div class="user-profile">
-                    <img src="images/images/profile-pic.png" alt="profile pic">
-                    <div>
-                        <p>John Nicholson</p>
-                        <span>June 4 2024,1:30pm</span>
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/images/profile-pic.png" alt="profile pic">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 4 2024,1:30pm</span>
+                        </div>
                     </div>
+                    <a href="#"><box-icon name='dots-vertical-rounded'></box-icon></a>
                 </div>
-
-
+                
                 <p class="post-text">Lorem, <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Alias aperiam cum delectus aspernatur, sint maiores ut quos nulla vitae magnam?. <a href="#">#WebDev</a> <a href="#">#webrule </a></p>
                 <img src="images/images/feed-image-1.png" alt="image1" class="post-img">
 
@@ -136,15 +181,133 @@
                         <div><img src="images/images/share.png" alt="like">20</div>
                     </div>
                     <div class="post-profile-icon">
-                            <img src="images/images/profile-pic.png" alt="">
+                        <img src="images/images/profile-pic.png" alt=""> <i class="fa-solid fa-circle-down"></i>
                     </div>
                 </div>
             </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/images/profile-pic.png" alt="profile pic">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 4 2024,1:30pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><box-icon name='dots-vertical-rounded'></box-icon></a>
+                </div>
+                <p class="post-text">Lorem, <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Alias aperiam cum delectus aspernatur, sint maiores ut quos nulla vitae magnam?. <a href="#">#WebDev</a> <a href="#">#webrule </a></p>
+                <img src="images/images/feed-image-2.png" alt="image1" class="post-img">
+
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/images/like-blue.png" alt="like">120</div>
+                        <div><img src="images/images/comments.png" alt="like">102</div>
+                        <div><img src="images/images/share.png" alt="like">202</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/images/profile-pic.png" alt=""> <i class="fa-solid fa-circle-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/images/profile-pic.png" alt="profile pic">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 4 2024,1:30pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><box-icon name='dots-vertical-rounded'></box-icon></a>
+                </div>
+                <p class="post-text">Lorem, <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Alias aperiam cum delectus aspernatur, sint maiores ut quos nulla vitae magnam?. <a href="#">#WebDev</a> <a href="#">#webrule </a></p>
+                <img src="images/images/feed-image-3.png" alt="image1" class="post-img">
+
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/images/like-blue.png" alt="like">120</div>
+                        <div><img src="images/images/comments.png" alt="like">102</div>
+                        <div><img src="images/images/share.png" alt="like">202</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/images/profile-pic.png" alt=""> <i class="fa-solid fa-circle-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/images/profile-pic.png" alt="profile pic">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 4 2024,1:30pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><box-icon name='dots-vertical-rounded'></box-icon></a>
+                </div>
+                <p class="post-text">Lorem, <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Alias aperiam cum delectus aspernatur, sint maiores ut quos nulla vitae magnam?. <a href="#">#WebDev</a> <a href="#">#webrule </a></p>
+                <img src="images/images/feed-image-4.png" alt="image1" class="post-img">
+
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/images/like-blue.png" alt="like">120</div>
+                        <div><img src="images/images/comments.png" alt="like">102</div>
+                        <div><img src="images/images/share.png" alt="like">202</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/images/profile-pic.png" alt=""> <i class="fa-solid fa-circle-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/images/profile-pic.png" alt="profile pic">
+                        <div>
+                            <p>John Nicholson</p>
+                            <span>June 4 2024,1:30pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><box-icon name='dots-vertical-rounded'></box-icon></a>
+                </div>
+                <p class="post-text">Lorem, <span>ipsum dolor</span> sit amet consectetur adipisicing elit. Alias aperiam cum delectus aspernatur, sint maiores ut quos nulla vitae magnam?. <a href="#">#WebDev</a> <a href="#">#webrule </a></p>
+                <img src="images/images/feed-image-5.png" alt="image1" class="post-img">
+
+
+
+                <div class="post-row">
+                    <div class="activity-icons">
+                        <div><img src="images/images/like-blue.png" alt="like">120</div>
+                        <div><img src="images/images/comments.png" alt="like">102</div>
+                        <div><img src="images/images/share.png" alt="like">202</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/images/profile-pic.png" alt=""> <i class="fa-solid fa-circle-down"></i>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="load-more-button">Load More</button>
             
         </div>
 
 
-        <!-- RIGHT-SIDEBAR -->
+
+
+
+
+
+
+
+        <!----------------------- RIGHT-SIDEBAR -------------------------------------->
 
         <div class="right-sidebar">
             <div class="sidebar-title">
@@ -226,5 +389,12 @@
         </div>
     </div>
     
+
+    <div class="footer">
+        <p>Copyright &copy; 2024 First project</p>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
